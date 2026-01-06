@@ -74,4 +74,10 @@ button:hover
     background-color: #1270c8;
 }
 
+.equal-button
+{
+    background-color: aqua;
+    grid-column: span 2;
+}
+
 
