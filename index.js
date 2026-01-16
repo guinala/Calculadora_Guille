@@ -7,22 +7,22 @@ function appendValue(value)
 
 function percent()
 {
-    let number = Number(display.value);
+    let number = Number(display.innerHTML);
 
     if (isNaN(number)) return;
 
-    display.value = number / 100;
+    display.innerHTML = number / 100;
 }
 
 function changeSign()
 {
-    if (display.value.startsWith('-')) 
+    if (display.innerHTML.startsWith('-')) 
     {
-        display.value = display.value.slice(1);
+        display.innerHTML = display.innerHTML.slice(1);
     } 
     else
     {
-        display.value = '-' + display.value;
+        display.innerHTML = '-' + display.innerHTML;
     }
 }
 
@@ -30,11 +30,11 @@ function calculateResult()
 {
     try
     {
-        display.value = eval(display.value);
+        display.innerHTML = eval(display.innerHTML);
     }
     catch (error)
     {
-        display.value = 'Error';
+        display.innerHTML = 'Error';
     }
 }
 
